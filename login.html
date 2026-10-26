@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora Brews | Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+   
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="logo.png" alt="Logo" class="logo-img">
+                <span class="logo-text">Bora <span>Brews</span></span>
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <nav class="nav-links">
+                <a href="login.html" class="active">Login</a>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="reserve.html">Reserve Desk</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main>
+    <section class="reservation-section">
+        <h1 class="section-title">Welcome Back!</h1>
+        <p class="section-subtitle"><b>Login/Signup</b></p>
+
+        <form class="booking-form" onsubmit="event.preventDefault(); alert('Logged in successfully!'); window.location.href='menu.html';">
+            <div class="form-group">
+                <label>First Name:</label>
+                <input type="text" placeholder="Enter your first name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Last Name:</label>
+                <input type="text" placeholder="Enter your last name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Contact Number:</label>
+                <input type="tel" placeholder="Enter your contact number" required pattern="[0-9]{10}">
+            </div>
+
+            <div class="form-group">
+                <label>Email Address:</label>
+                <input type="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="primary-btn form-btn login-submit-btn">Login / Signup</button>
+        </form>
+    </section>
+</main>
+   
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Bora <span>Brews</span></h3>
+                <p>Quiet study lounge, fresh flowers & specialty espresso.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="login.html">Login</a>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="contact.html">Contact</a>
+                <a href="reserve.html">Reserve Desk</a>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <p>Mon - Fri: 8:00 AM - 10:00 PM</p>
+                <p>Sat - Sun: 9:00 AM - 11:00 PM</p>
+            </div>
+
+           <div class="social-icons">
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+             
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bora Brews Study & Floral Lounge | User Defined Project (UDP)</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora Brews | Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .cart-container {
+            padding: 60px 8%;
+            min-height: 70vh;
+        }
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            background: #2a122b;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(168, 85, 247, 0.2);
+        }
+        .cart-table th, .cart-table td {
+            padding: 16px 20px;
+            text-align: left;
+            border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+            color: #f3e8ff;
+        }
+        .cart-table th {
+            background: #11070e;
+            color: #a855f7;
+            font-size: 1.05rem;
+        }
+        .checkout-box {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .total-price {
+            font-size: 1.2rem;
+            color: #d8b4fe;
+            font-weight: 600;
+        }
+        .total-price span {
+            color: #a855f7;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="logo.png" alt="Logo" class="logo-img">
+                <span class="logo-text">Bora <span>Brews</span></span>
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reserve.html">Reserve Desk</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </nav>
+        <div class="cart-btn">
+            <a href="cart.html" style="text-decoration:none; font-size:22px;">🛒</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-container">
+            <h2 class="section-title">Your Shopping <span>Cart</span></h2>
+            <p class="section-subtitle">Items selected for your study session</p>
+
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Item Details</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Velvet Lavender Cold Brew</td>
+                        <td>Handcrafted Coffee</td>
+                        <td>₹240</td>
+                    </tr>
+                    <tr>
+                        <td>Blueberry Cheesecake Slice</td>
+                        <td>Fresh Desserts</td>
+                        <td>₹260</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="checkout-box">
+                <div class="total-price">
+                    Total Amount: <span>₹500</span>
+                </div>
+                <a href="index.html" class="primary-btn" onclick="alert('Ordered Successfully!');"  style="text-decoration:none;">Confirm Order</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Bora <span>Brews</span></h3>
+                <p>Quiet study lounge, fresh flowers & specialty espresso.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="reserve.html">Reserve Desk</a>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <p>Mon - Fri: 8:00 AM - 10:00 PM</p>
+                <p>Sat - Sun: 9:00 AM - 11:00 PM</p>
+            </div>
+        </div>
+        <div class="social-icons">
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bora Brews Study & Floral Lounge | User Defined Project (UDP)</p>
+        </div>
+    </footer>
+
+</body>
+</html>
