@@ -435,6 +435,8 @@ body {
     gap: 12px;
     margin-top: 15px;
     justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .social-icons a {
@@ -470,6 +472,8 @@ body {
         flex-direction: column;
         text-align: center;
         align-items: center;
+        display: flex;
+        justify-content: center;
         gap: 30px;
     }
     
@@ -509,6 +513,8 @@ body {
     .navbar {
         flex-direction: column;
         height: auto;
+        text-align: center;
+        align-items: center;
         padding: 15px;
         gap: 10px;
     }
