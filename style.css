@@ -409,8 +409,8 @@ body {
 }
 
 .footer-col {
-    flex: 1;
-    min-width: 200px;
+    width: 100%;
+    text-align: center;
 }
 
 .footer-col h3, .footer-col h4 {
@@ -434,6 +434,7 @@ body {
     display: flex;
     gap: 12px;
     margin-top: 15px;
+    justify-content: center;
 }
 
 .social-icons a {
@@ -468,7 +469,8 @@ body {
     .navbar, .hero, .about-section {
         flex-direction: column;
         text-align: center;
-        gap: 20px;
+        align-items: center;
+        gap: 30px;
     }
     
     .hero-buttons {
